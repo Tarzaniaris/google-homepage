@@ -32,30 +32,49 @@ input:hover {
 .headnav {
     display: flex;
     justify-content: end;
+    font-family: arial, sans-serif;
+    margin: 10px 10px;
 }
 
 .Gmail, .Images, .Apps, .Profile {
     margin: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .footnav {
     display: grid;
+    grid-column-gap: 25px;
     position: absolute;
     width: 100%;
     bottom: 0px;
     background-color: rgba(224, 224, 224, 0.397);
     grid-template-columns: repeat(3, auto) 1fr repeat(3, auto);
+    grid-template-rows: 40px 40px;
 }
 
 .Country, .Advertising, .Business, .About, .Search, .Privacy, .Terms, .Settings {
+    display: flex;
+    align-items: center;
+    font-family: arial, sans-serif;
     text-align: left;
     font-size: 14px;
-    padding: 10px;
-    margin: 5px;
-    color: rgb(121, 121, 121);
+    color: rgb(110, 110, 110);
 }
 
 .Country {
+    margin: 0px;
     grid-column: span 8;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-left: 25px;
+    border-color: rgb(223, 223, 223);
+}
+
+.Advertising {
+    padding-left: 25px;
+}
+
+.Settings {
+    padding-right: 10px;
 }
